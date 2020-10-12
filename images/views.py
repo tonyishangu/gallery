@@ -17,7 +17,7 @@ def home(request):
         images = Image.view_category(cat)
         return render(request, 'all-images.html', {"name":name,"images":images,"cat":cat })
 
-    return render(request,"all-images.html",{"images":images,"category":category})
+    return render(request,"all-images.html",{"images":images,"location":location,"category":category})
 
 def search_results(request):
 
