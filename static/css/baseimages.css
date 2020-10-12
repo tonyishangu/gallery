@@ -1,14 +1,7 @@
+
 @media (min-width: 576px) {
     .modal-dialog { max-width: none; }
    }
-   
-   /* .modal {
-    width: 90%;
-    height: ;
-    padding: 0;
-    align-content: center;
-   } */
-   
    h2, h4{
      font-family: 'Shadows Into Light', cursive;
    }
@@ -22,13 +15,11 @@
    
      font-family: 'Abel', sans-serif;
      font-size: 20px;
-     background-image: url('/static/img/purple.jpg');
      background-repeat: repeat-x;
    
    }
    
    body{
-     background-image: url('/static/img/white.jpg');
      z-index: 0;
      background-color: rgba(255, 255, 255, 0.4);
      background-blend-mode: lighten;
