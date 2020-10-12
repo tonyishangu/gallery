@@ -1,6 +1,6 @@
 # Gallery
 
-## Built By [Marcus Jean-Louis](https://github.com/tonyishangu/)
+## Built By [Tonnie](https://github.com/tonyishangu/)
 
 ## Description
 This is an application that allows users to view images. Image details are stored in categories and tagged by Location. The admin is responsible for uploading, editing or deleting images.
