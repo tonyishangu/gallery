@@ -17,7 +17,7 @@ class Location(models.Model):
 class Image(models.Model):
     name= models.CharField(max_length=50)
     description = HTMLField()
-    gallery_image = models.ImageField(upload_to='media/pics/', blank=True)
+    gallery_image = models.ImageField(upload_to='pics/', blank=True)
     categories = models.ManyToManyField(Categories)
     location = models.ForeignKey(Location,on_delete=models.CASCADE)
 
