@@ -2,6 +2,7 @@ from django.db import models
 import datetime as dt
 from django.contrib.auth.models import User
 from tinymce.models import HTMLField
+from cloudinary.models import CloudinaryField
 
 # Create your models here.
 class Categories(models.Model):
@@ -17,7 +18,7 @@ class Location(models.Model):
 class Image(models.Model):
     name= models.CharField(max_length=50)
     description = HTMLField()
-    gallery_image = models.ImageField(upload_to='pics/', blank=True)
+    gallery_image = CloudinaryField('image')
     categories = models.ManyToManyField(Categories)
     location = models.ForeignKey(Location,on_delete=models.CASCADE)
 
